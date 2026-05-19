@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Course</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100" style="--primary: #ff9500; --secondary: #FCFCFD; 
+    --text-color: #262626;">
+    <header>
+        <div
+            class="bg-[var(--primary)] flex items-center justify-center rounded-lg py-[14px] mx-[14px] mt-[19px] gap-[23px]">
+            <p class="text-[var(--secondary)] text-lg">
+                Free Courses 🌟 Sale Ends Soon, Get It Now →
+            </p>
+        </div>
+        <div
+            class="flex items-center justify-between mx-[14px] mt-[19px] pt-[20px] pb-[15px] px-8 border-b border- solid border-[#F1F1F3]">
+            <div class="flex items-center gap-6 pr-[51px]">
+                <h1>
+                    <img src="img/s-shape.png" />
+                </h1>
+                <nav>
+                    <ul class="flex gap-6 items-center">
+                        <li class="bg-gray-200 text-black py-[14px] px-[24px] rounded-lg hover:bg-[var(--primary)] hover:text-white">
+                            <a href="#" >Home</a>
+                        </li>
+                        <li><a href="#"  class="hover:text-[var(--primary)] transition">Courses</a></li>
+                        <li><a href="#" class="hover:text-[var(--primary)] transition">About us</a></li>
+                        <li><a href="#" class="hover:text-[var(--primary)] transition">Pricing</a></li>
+                        <li><a href="#" class="hover:text-[var(--primary)] transition">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="flex items-center gap-4 gap-4 pr-[51px] flex items-center">
+                <span class="font-medium hover:text-[var(--primary)] transition">Sign Up</span>
+                <button class="bg-[var(--primary)] text-white py-[14px] px-[34px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] transition">
+                    Login
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- FIRST SECTION -->
+
+    <section class="flex flex-col items-center justify-center  mt-12 gap-6">
+        <div class="bg-[var(--secondary)]  relative rounded-lg gap-4 py-[14px] px-[24px]">
+            <img class="absolute -top-3 -left-3 w-4 h-4 " src="img/Abstract Line.png" />
+            <div class="flex items-center justify-center gap-4 border-b border- solid border-[var(--secondary)]">
+                <img  src="./img/Icon Container.png" />
+                <h1 class="font-semibold text-5xl"> <span
+                        class="text-[var(--primary)] font-semibold text-5xl">Unlock</span> Your Creative Potential</h1>
+            </div>
+        </div>
+        <h1 class="font-medium text-3xl text-[var(--text-color)] ">with Online Design And Development Courses</h1>
+        <p class="text-[var(--text-color)]  text-lg">Learn From Industry Experts and Enhance Your Skills</p>
+
+        <div class="  flex gap-4 py-[18px] px-[24px]">
+            <button class="bg-[var(--primary)] text-white py-[14px] px-[34px] rounded-lg  hover:bg-[var(--secondary)] hover:text-[var(--primary)] transition">
+                Explore Courses
+            </button>
+
+            <button class="bg-[var(--secondary)] text-[var(--text-color)] py-[14px] px-[34px] rounded-lg border-2 border-[var(--secondary)] hover:border-[var(--primary)] transition">View pricing</button>
+        </div>
+    </section>
+</body>
+
+</html>
