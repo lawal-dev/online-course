@@ -5,40 +5,63 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online Course</title>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="bg-gray-100" style="--primary: #ff9500; --secondary: #FCFCFD; 
-    --text-color: #262626;">
-    <header>
+<body class="bg-gray-100" style="--primary: #ff9500; --secondary: #fcfcfd; --text-color: #262626;">
+    <header class="">
         <div
             class="bg-[var(--primary)] flex items-center justify-center rounded-lg py-[14px] mx-[14px] mt-[19px] gap-[23px]">
-            <p class="text-[var(--secondary)] text-lg">
+            
+            <p class="text-[var(--secondary)] text-sm md:text-lg text-center px-2">
                 Free Courses 🌟 Sale Ends Soon, Get It Now →
             </p>
         </div>
+        
         <div
-            class="flex items-center justify-between mx-[14px] mt-[19px] pt-[20px] pb-[15px] px-8 border-b border- solid border-[#F1F1F3]">
-            <div class="flex items-center gap-6 pr-[51px]">
+            class="flex flex-col md:flex-row items-center justify-between mx-[14px] mt-[19px] pt-[20px] pb-[15px] px-8 border-b border- solid border-[#F1F1F3] gap-4">
+            
+            <div class="flex flex-col md:flex-row items-center gap-6">
                 <h1>
                     <img src="img/s-shape.png" />
                 </h1>
                 <nav>
-                    <ul class="flex gap-6 items-center">
-                        <li class="bg-gray-200 text-black py-[14px] px-[24px] rounded-lg hover:bg-[var(--primary)] hover:text-white">
-                            <a href="#" >Home</a>
+                    
+                    <ul class="hidden md:flex gap-6 items-center">
+                        <li
+                            class="bg-gray-200 text-black py-[14px] px-[24px] rounded-lg hover:bg-[var(--primary)] hover:text-white">
+                            <a href="#">Home</a>
                         </li>
-                        <li><a href="#"  class="hover:text-[var(--primary)] transition">Courses</a></li>
-                        <li><a href="#" class="hover:text-[var(--primary)] transition">About us</a></li>
-                        <li><a href="#" class="hover:text-[var(--primary)] transition">Pricing</a></li>
-                        <li><a href="#" class="hover:text-[var(--primary)] transition">Contact</a></li>
+                        <li>
+                            <a href="course.html"
+                                class=" text-[var(--text-color)] hover:text-[var(--primary)] transition">Courses</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-[var(--text-color)] hover:text-[var(--primary)] transition">About
+                                us</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-[var(--text-color)] hover:text-[var(--primary)] transition">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-[var(--text-color)] hover:text-[var(--primary)] transition">Contact</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
 
-            <div class="flex items-center gap-4 gap-4 pr-[51px] flex items-center">
+            <div class="flex items-center gap-4">
                 <span class="font-medium hover:text-[var(--primary)] transition">Sign Up</span>
-                <button class="bg-[var(--primary)] text-white py-[14px] px-[34px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] transition">
+                <button
+                    class="bg-[var(--primary)] text-white py-[14px] px-[34px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] transition">
                     Login
                 </button>
             </div>
@@ -47,26 +70,516 @@
 
     <!-- FIRST SECTION -->
 
-    <section class="flex flex-col items-center justify-center  mt-12 gap-6">
-        <div class="bg-[var(--secondary)]  relative rounded-lg gap-4 py-[14px] px-[24px]">
-            <img class="absolute -top-3 -left-3 w-4 h-4 " src="img/Abstract Line.png" />
+    <section class="flex flex-col items-center justify-center mt-12 gap-6 px-4">
+        <div class="bg-[var(--secondary)] relative rounded-lg gap-4 py-[14px] px-[24px]">
+            <img class="absolute -top-3 -left-3 w-4 h-4" src="img/Abstract Line.png" />
             <div class="flex items-center justify-center gap-4 border-b border- solid border-[var(--secondary)]">
-                <img  src="./img/Icon Container.png" />
-                <h1 class="font-semibold text-5xl"> <span
-                        class="text-[var(--primary)] font-semibold text-5xl">Unlock</span> Your Creative Potential</h1>
+                <img src="./img/Icon Container.png" />
+                
+                <h1 class="font-semibold text-2xl md:text-5xl text-center">
+                    <span class="text-[var(--primary)] font-semibold text-2xl md:text-5xl">Unlock</span>
+                    Your Creative Potential
+                </h1>
             </div>
         </div>
-        <h1 class="font-medium text-3xl text-[var(--text-color)] ">with Online Design And Development Courses</h1>
-        <p class="text-[var(--text-color)]  text-lg">Learn From Industry Experts and Enhance Your Skills</p>
+        
+        <h1 class="font-medium text-xl md:text-3xl text-[var(--text-color)] text-center">
+            with Online Design And Development Courses
+        </h1>
+        <p class="text-[var(--text-color)] text-base md:text-lg text-center">
+            Learn From Industry Experts and Enhance Your Skills
+        </p>
 
-        <div class="  flex gap-4 py-[18px] px-[24px]">
-            <button class="bg-[var(--primary)] text-white py-[14px] px-[34px] rounded-lg  hover:bg-[var(--secondary)] hover:text-[var(--primary)] transition">
+        
+        <div class="flex flex-col md:flex-row gap-4 py-[18px] px-[24px] w-full md:w-auto">
+            <button
+                class="bg-[var(--primary)] text-white py-[14px] px-[34px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] transition">
                 Explore Courses
             </button>
 
-            <button class="bg-[var(--secondary)] text-[var(--text-color)] py-[14px] px-[34px] rounded-lg border-2 border-[var(--secondary)] hover:border-[var(--primary)] transition">View pricing</button>
+            <button
+                class="bg-[var(--secondary)] text-[var(--text-color)] py-[14px] px-[34px] rounded-lg border-2 border-[var(--secondary)] hover:border-[var(--primary)] transition">
+                View pricing
+            </button>
         </div>
     </section>
+
+    <!-- SECOND SECTION -->
+
+    <marquee class="flex justify-between items-center  bg-[var(--secondary)]">
+        <div class="flex gap-6">
+            <img src="./img/Card.png" />
+            <img src="./img/Card (1).png" />
+            <img src="./img/Card (2).png" />
+            <img src="./img/Card (3).png" />
+            <img src="./img/Card (4).png" />
+            <img src="./img/Card (5).png" />
+            <img src="./img/Card (6).png" />
+        </div>
+    </marquee>
+
+    <!-- SECTION HOUSING THE BIG IMG -->
+    <section class="flex justify-center mt-18 px-4">
+        <div class="relative w-full max-w-5xl">
+            
+            <img class="rounded-xl overflow-hidden w-full" src="./img/Big img.png" alt="Big Image" />
+            <div class="absolute inset-0 flex justify-center items-center">
+                <img class="w-12 h-12" src="./img/Button@2x.png" alt="Button" />
+            </div>
+        </div>
+    </section>
+
+
+    <!-- THIRD SECTION -->
+
+    <section class="px-4 md:px-8">
+        
+        <div class="flex flex-col md:flex-row justify-between mt-24 mx-4 md:mx-34 gap-4">
+            <div class="w-full md:w-3/4">
+                
+                <h1 class="font-semibold text-3xl md:text-5xl text-[var(--text-color)]">Benefits</h1>
+                <p class="text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+            </div>
+
+            <div class="flex md:justify-end">
+                <button
+                    class="bg-[var(--secondary)] text-[var(--text-color)] w-40 h-12 rounded-lg hover:bg-[var(--primary)] hover:text-[var(--secondary)] transition">View
+                    All</button>
+            </div>
+        </div>
+
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12 mx-4 md:mx-34">
+            <div class="relative flex flex-col bg-[#FFFFFF] rounded-xl p-[50px] min-h-[400px]">
+                <h1 class="font-bold text-[80px] text-[var(--text-color)] flex justify-end">01</h1>
+                <h2 class="font-semibold text-2xl text-[#333333] max-w-[600px]">Flexible Learning Schedule</h2>
+                <p class="text-lg text-[#4C4C4D]">Fit your coursework around your existing commitments and obligations.</p>
+                <img class="absolute bottom-4 right-4 rounded-lg  w-12 h-12" src="./img/arrow button.png" alt="Arrow">
+            </div>
+            <div class="relative flex flex-col bg-[#FFFFFF] rounded-xl p-[50px] min-h-[400px]">
+                <h1 class="font-bold text-[80px] text-[var(--text-color)] flex justify-end">02</h1>
+                <h2 class="font-semibold text-2xl text-[#333333] max-w-[600px]">Expert Instruction</h2>
+                <p class="text-lg text-[#4C4C4D]">Learn from industry experts who have hands-on experience in design and development.</p>
+                <img class="absolute bottom-4 right-4 rounded-lg  w-12 h-12" src="./img/arrow button.png" alt="Arrow">
+            </div>
+            <div class="relative flex flex-col bg-[#FFFFFF] rounded-xl p-[50px] min-h-[400px]">
+                <h1 class="font-bold text-[80px] text-[var(--text-color)] flex justify-end">03</h1>
+                <h2 class="font-semibold text-2xl text-[#333333] max-w-[600px]">Diverse Course Offerings</h2>
+                <p class="text-lg text-[#4C4C4D]">Explore a wide range of design and development courses covering various topics.</p>
+                <img class="absolute bottom-4 right-4 rounded-lg  w-12 h-12" src="./img/arrow button.png" alt="Arrow">
+            </div>
+            <div class="relative flex flex-col bg-[#FFFFFF] rounded-xl p-[50px] min-h-[400px]">
+                <h1 class="font-bold text-[80px] text-[var(--text-color)] flex justify-end">04</h1>
+                <h2 class="font-semibold text-2xl text-[#333333] max-w-[600px]">Updated Curriculum</h2>
+                <p class="text-lg text-[#4C4C4D]">Access courses with up-to-date content reflecting the latest trends and industry practices.</p>
+                <img class="absolute bottom-4 right-4 rounded-lg  w-12 h-12" src="./img/arrow button.png" alt="Arrow">
+            </div>
+            <div class="relative flex flex-col bg-[#FFFFFF] rounded-xl p-[50px] min-h-[400px]">
+                <h1 class="font-bold text-[80px] text-[var(--text-color)] flex justify-end">05</h1>
+                <h2 class="font-semibold text-2xl text-[#333333] max-w-[600px]">Practical Projects and Assignments</h2>
+                <p class="text-lg text-[#4C4C4D]">Develop a portfolio showcasing your skills and abilities to potential employers.</p>
+                <img class="absolute bottom-4 right-4 rounded-lg  w-12 h-12" src="./img/arrow button.png" alt="Arrow">
+            </div>
+            <div class="relative flex flex-col bg-[#FFFFFF] rounded-xl p-[50px] min-h-[400px]">
+                <h1 class="font-bold text-[80px] text-[var(--text-color)] flex justify-end">06</h1>
+                <h2 class="font-semibold text-2xl text-[#333333] max-w-[600px]">Interactive Learning Environment</h2>
+                <p class="text-lg text-[#4C4C4D]">Engage with interactive elements and collaborate with peers in a dynamic learning space.</p>
+                <img class="absolute bottom-4 right-4 rounded-lg  w-12 h-12" src="./img/arrow button.png" alt="Arrow">
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION HOUSING OUR COURSES -->
+
+    <section class="mt-4 space-y-6 px-4 md:px-8">
+        
+        <div class="flex flex-col md:flex-row justify-between mt-24 mx-4 md:mx-34 gap-4">
+            <div class="w-full md:w-3/4">
+                <h1 class="font-semibold text-3xl md:text-5xl text-[var(--text-color)] mb-6">Our Courses</h1>
+                <p class="text-lg">Explore our comprehensive range of courses designed to enhance your skills and advance your career.</p>
+            </div>
+            <div class="flex md:justify-end">
+                <button
+                    class="bg-[var(--secondary)] text-[var(--text-color)] w-40 h-12 rounded-lg hover:bg-[var(--primary)] hover:text-[var(--secondary)] transition">View All</button>
+            </div>
+        </div>
+
+        <!-- CARDS -->
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-2 mx-4 md:mx-34">
+            <!-- FIRST CARD -->
+            <div class="flex flex-col bg-[#FFFFFF] rounded-xl overflow-hidden pb-5">
+                <img class="rounded-lg h-48 object-cover mx-5 my-4" src="./img/writing man.png" alt="Writing Man">
+                <div class="flex justify-between mx-5 mb-4">
+                    <div class="gap-[10px]">
+                        <span class="bg-[var(--secondary)] text-[#4C4C4D] rounded-md border border-solid border-[#F1F1F3] py-[10px] px-[16px]">4 Weeks</span>
+                        <span class="bg-[var(--secondary)] text-[#4C4C4D] rounded-md border border-solid border-[#F1F1F3] py-[10px] px-[16px]">Beginner</span>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-xl"> By John Smith</h4>
+                    </div>
+                </div>
+                <h3 class="font-semibold text-2xl text-[#4C4C4D] mx-5 mb-5">Web Development</h3>
+                <p class="text-lg text-[#4C4C4D] mx-5 mb-5">Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.</p>
+                
+                <button class="bg-[var(--primary)] text-[var(--secondary)] w-4/5 h-12 py-[10px] px-[16px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] border-2 border-[var(--secondary)] hover:border-[var(--primary)] transition mx-auto mt-1">Get it now</button>
+            </div>
+            <!-- SECOND CARD -->
+            <div class="flex flex-col bg-[#FFFFFF] rounded-xl overflow-hidden pb-5">
+                <img class="rounded-lg h-48 object-cover mx-5 my-4" src="./img/uiux.png" alt="Writing Man">
+                <div class="flex justify-between mx-5 mb-4">
+                    <div class="gap-[10px]">
+                        <span class="bg-[var(--secondary)] text-[var(--text-color)] rounded-md border border-solid border-[#F1F1F3] py-[10px] px-[16px]">6 Weeks</span>
+                        <span class="bg-[var(--secondary)] text-[#4C4C4D] rounded-md border border-solid border-[#F1F1F3] py-[10px] px-[16px]">Intermediate</span>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-xl"> By David Brown</h4>
+                    </div>
+                </div>
+                <h3 class="font-semibold text-2xl text-[#4C4C4D] mx-5 mb-5">UI/UX Design</h3>
+                <p class="text-lg text-[#4C4C4D] mx-5 mb-5">Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
+                <button class="bg-[var(--primary)] text-[var(--secondary)] w-4/5 h-12 py-[10px] px-[16px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] border-2 border-[var(--secondary)] hover:border-[var(--primary)] transition mx-auto mt-1">Get it now</button>
+            </div>
+            <!-- THIRD CARD -->
+            <div class="flex flex-col bg-[#FFFFFF] rounded-xl overflow-hidden pb-5">
+                <img class="rounded-lg h-48 object-cover mx-5 my-4" src="./img/mobile app dev.png" alt="Writing Man">
+                <div class="flex justify-between mx-5 mb-4">
+                    <div class="gap-[10px]">
+                        <span class="bg-[var(--secondary)] text-[#4C4C4D] rounded-md border border-solid border-[#F1F1F3] py-[10px] px-[16px]">8 Weeks</span>
+                        <span class="bg-[var(--secondary)] text-[#4C4C4D] rounded-md border border-solid border-[#F1F1F3] py-[10px] px-[16px]">Intermediate</span>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-xl"> By Emily johnson</h4>
+                    </div>
+                </div>
+                <h3 class="font-semibold text-2xl text-[#4C4C4D] mx-5 mb-5">Mobile App Development</h3>
+                <p class="text-lg text-[#4C4C4D] mx-5 mb-5">Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.</p>
+                <button class="bg-[var(--primary)] text-[var(--secondary)] w-4/5 h-12 py-[10px] px-[16px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] border-2 border-[var(--secondary)] hover:border-[var(--primary)] transition mx-auto mt-1">Get it now</button>
+            </div>
+            <!-- FOURTH CARD -->
+            <div class="flex flex-col bg-[#FFFFFF] rounded-xl overflow-hidden pb-5">
+                <img class="rounded-lg h-48 object-cover mx-5 my-4" src="./img/graphic app design.png" alt="Writing Man">
+                <div class="flex justify-between mx-5 mb-4">
+                    <div class="gap-[10px]">
+                        <span class="bg-[var(--secondary)] text-[#4C4C4D] rounded-md border border-solid border-[#F1F1F3] py-[10px] px-[16px]">10 Weeks</span>
+                        <span class="bg-[var(--secondary)] text-[#4C4C4D] rounded-md border border-solid border-[#F1F1F3] py-[10px] px-[16px]">Beginner</span>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-xl"> By Sarah Thompson</h4>
+                    </div>
+                </div>
+                <h3 class="font-semibold text-2xl text-[#4C4C4D] mx-5 mb-5">Graphic App Design For Beginners</h3>
+                <p class="text-lg text-[#4C4C4D] mx-5 mb-5">Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.</p>
+                <button class="bg-[var(--primary)] text-[var(--secondary)] w-4/5 h-12 py-[10px] px-[16px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] border-2 border-[var(--secondary)] hover:border-[var(--primary)] transition mx-auto mt-1">Get it now</button>
+            </div>
+            <!-- FIFTH CARD -->
+            <div class="flex flex-col bg-[#FFFFFF] rounded-xl overflow-hidden pb-5">
+                <img class="rounded-lg h-48 object-cover mx-5 my-4" src="./img/frontend eb deb.png" alt="Writing Man">
+                <div class="flex justify-between mx-5 mb-4">
+                    <div class="gap-[10px]">
+                        <span class="bg-[var(--secondary)] text-[var(--text-color)] rounded-md border border-solid border-[#F1F1F3] py-[10px] px-[16px]">10 Weeks</span>
+                        <span class="bg-[var(--secondary)] text-[var(--text-color)] rounded-md border border-solid border-[#F1F1F3] py-[10px] px-[16px]">Intermediate</span>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-xl"> By Michael Adams</h4>
+                    </div>
+                </div>
+                <h3 class="font-semibold text-2xl text-[#4C4C4D] mx-5 mb-5">Front-End Web Development</h3>
+                <p class="text-lg text-[#4C4C4D] mx-5 mb-5">Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.</p>
+                <button class="bg-[var(--primary)] text-[var(--secondary)] w-4/5 h-12 py-[10px] px-[16px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] border-2 border-[var(--secondary)] hover:border-[var(--primary)] transition mx-auto mt-1">Get it now</button>
+            </div>
+            <!-- SIXTH CARD -->
+            <div class="flex flex-col bg-[#FFFFFF] rounded-xl overflow-hidden pb-5">
+                <img class="rounded-lg h-48 object-cover mx-5 my-4" src="./img/advanced js.png" alt="Writing Man">
+                <div class="flex justify-between mx-5 mb-4">
+                    <div class="gap-[10px]">
+                        <span class="bg-[var(--secondary)] text-[#4C4C4D] rounded-md border border-solid border-[#F1F1F3] py-[10px] px-[16px]">6 Weeks</span>
+                        <span class="bg-[var(--secondary)] text-[#4C4C4D] rounded-md border border-solid border-[#F1F1F3] py-[10px] px-[16px]">Advance</span>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-xl"> By Jenifer Wilson</h4>
+                    </div>
+                </div>
+                <h3 class="font-semibold text-2xl text-[#4C4C4D] mx-5 mb-5">Web Development</h3>
+                <p class="text-lg text-[#4C4C4D] mx-5 mb-5">Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.</p>
+                <button class="bg-[var(--primary)] text-[var(--secondary)] w-4/5 h-12 py-[10px] px-[16px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] border-2 border-[var(--secondary)] hover:border-[var(--primary)] transition mx-auto mt-1">Get it now</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION HOUSING THE TESTIMONIALS -->
+
+    <section class="px-4 md:px-8">
+    
+        <div class="flex flex-col md:flex-row justify-between mt-24 mx-4 md:mx-34 gap-4">
+            <div class="w-full md:w-3/4">
+                <h1 class="font-semibold text-3xl md:text-5xl text-[var(--text-color)] mb-6">Our Testimonials</h1>
+                <p class="text-lg">Hear what our students have to say about their learning experience.</p>
+            </div>
+            <div class="flex md:justify-end">
+                <button class="bg-[var(--secondary)] text-[var(--text-color)] w-40 h-12 rounded-lg hover:bg-[var(--primary)] hover:text-[var(--secondary)] transition">View All</button>
+            </div>
+        </div>
+
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4 mx-4 md:mx-34">
+            <div class="flex flex-col bg-[#FFFFFF] rounded-xl border border-[#F1F1F3]">
+                <p class="text-[#4C4C4D] text-lg font-normal px-5 gap-4 mt-4">The web design course provided a solid foundation for me. The instructors were knowledgeable and supportive, and the interactive learning environment was engaging. I highly recommend it!</p>
+                
+                <div class="flex flex-col md:flex-row justify-between bg-[#FCFCFD] rounded-lg mt-4 w-full mx-auto px-5 py-3 gap-3">
+                    <div class="flex items-center gap-4">
+                        <span><img class="rounded-lg w-12 h-12" src="./img/sarah.png" alt="Ellipse"></span>
+                        <span class="font-semibold text-lg text-[#333333]">Sarah L.</span>
+                    </div>
+                    <button class="bg-[#F7F7F8] text-[var(--text-color)] w-full md:w-40 h-12 rounded-lg border border-solid border-[#F1F1F3] hover:bg-[var(--primary)] hover:text-[var(--secondary)] transition">Read Full Story</button>
+                </div>
+            </div>
+            <div class="flex flex-col bg-[#FFFFFF] rounded-xl border border-[#F1F1F3]">
+                <p class="text-[#4C4C4D] text-lg font-normal px-5 gap-4 mt-4">The UI/UX design course exceeded my expectations. The instructor's expertise and practical assignments helped me improve my design skills. I feel more confident in my career now. Thank you!</p>
+                <div class="flex flex-col md:flex-row justify-between bg-[#FCFCFD] rounded-lg mt-4 w-full mx-auto px-5 py-3 gap-3">
+                    <div class="flex items-center gap-4">
+                        <span><img class="rounded-lg w-12 h-12" src="./img/jason.png" alt="Ellipse"></span>
+                        <span class="font-semibold text-lg text-[#333333]">Jason M.</span>
+                    </div>
+                    <button class="bg-[#F7F7F8] text-[var(--text-color)] w-full md:w-40 h-12 rounded-lg border border-solid border-[#F1F1F3] hover:bg-[var(--primary)] hover:text-[var(--secondary)] transition">Read Full Story</button>
+                </div>
+            </div>
+            <div class="flex flex-col bg-[#FFFFFF] rounded-xl border border-[#F1F1F3]">
+                <p class="text-[#4C4C4D] text-lg font-normal px-5 gap-4 mt-4">The mobile app development course was fantastic! The step-by-step tutorials and hands-on projects helped me grasp the concepts easily. I'm now building my own app. Great course!</p>
+                <div class="flex flex-col md:flex-row justify-between bg-[#FCFCFD] rounded-lg mt-4 w-full mx-auto px-5 py-3 gap-3">
+                    <div class="flex items-center gap-4">
+                        <span><img class="rounded-lg w-12 h-12" src="./img/emily.png" alt="Ellipse"></span>
+                        <span class="font-semibold text-lg text-[#333333]">Emily R.</span>
+                    </div>
+                    <button class="bg-[#F7F7F8] text-[var(--text-color)] w-full md:w-40 h-12 rounded-lg border border-solid border-[#F1F1F3] hover:bg-[var(--primary)] hover:text-[var(--secondary)] transition">Read Full Story</button>
+                </div>
+            </div>
+            <div class="flex flex-col bg-[#FFFFFF] rounded-xl border border-[#F1F1F3]">
+                <p class="text-[#4C4C4D] text-lg font-normal px-5 gap-4 mt-4">I enrolled in the graphic design course as a beginner, and it was the perfect starting point. The instructor's guidance and feedback improved my design abilities significantly. I'm grateful for this course!</p>
+                <div class="flex flex-col md:flex-row justify-between bg-[#FCFCFD] rounded-lg mt-4 w-full mx-auto px-5 py-3 gap-3">
+                    <div class="flex items-center gap-4">
+                        <span><img class="rounded-lg w-12 h-12" src="./img/michael.png" alt="Ellipse"></span>
+                        <span class="font-semibold text-lg text-[#333333]">Michael T.</span>
+                    </div>
+                    <button class="bg-[#F7F7F8] text-[var(--text-color)] w-full md:w-40 h-12 rounded-lg border border-solid border-[#F1F1F3] hover:bg-[var(--primary)] hover:text-[var(--secondary)] transition">Read Full Story</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION HOUSING PRICING -->
+    <section class="px-4 md:px-8">
+        
+        <div class="flex flex-col md:flex-row justify-between mt-24 mx-4 md:mx-34 gap-4">
+            <div class="w-full md:w-3/4">
+                <h1 class="font-semibold text-3xl md:text-5xl text-[var(--text-color)] mb-6">Our Pricing</h1>
+                <p class="text-lg text-[#59595A]">Choose the plan that works best for you and your learning goals.</p>
+            </div>
+            <div class="flex items-center gap-4 bg-[#FFFFFF] rounded-lg w-max px-[16px] py-1 border border-solid border-[#F1F1F3] self-start">
+                <span class="font-medium hover:text-[var(--primary)] transition">Monthly</span>
+                <button class="bg-[var(--primary)] text-white py-1 px-[16px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] border-2 border-[var(--secondary)] hover:border-[var(--primary)]">Yearly</button>
+            </div>
+        </div>
+
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-12 mx-4 md:mx-34 bg-[#FFFFFF] rounded-lg p-6">
+            <div class="flex flex-col gap-6 border border-[#F1F1F3] rounded-lg p-6 bg-[#FCFCFD]">
+                <h1 class="bg-[#FFF9F0] ring-1 ring-[#FEACC] ring-inset flex items-center justify-center rounded-md h-12 text-[22px] text-[#262626] font-medium">Free plan</h1>
+                <div class="flex items-center justify-center">
+                    <h2 class="font-semibold text-[80px] text-[#262626]">$0</h2>
+                    <span class="text-[20px] text-[#4C4C4D] font-medium pt-7">/month</span>
+                </div>
+                <div class="flex flex-col gap-[30px] bg-[#FFFFFF] rounded-[14px] pt-[40px] px-[20px] md:px-[40px] pb-0 border border-solid border-[#F1F1F3]">
+                    <h3 class="font-medium text-[20px] text-[#262626] flex items-center justify-center">Available Features</h3>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/mark.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Access to Basic Courses</span>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/mark.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Limited course materials and resources.</span>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/mark.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Basic community support.</span>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/mark.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">No certification upon completion.</span>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/mark.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Ad-supported platform.</span>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/x mark real.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Access to exclusive Pro Plan community forums.</span>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/x mark real.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Early access to new courses and updates.</span>
+                    </div>
+                    <div class="-mx-[20px] md:-mx-[40px]">
+                        <button class="bg-[var(--primary)] text-[var(--secondary)] w-full h-12 rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] border-2 border-[var(--secondary)] hover:border-[var(--primary)] transition">Get Started</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col gap-6 border border-[#F1F1F3] rounded-lg p-6 bg-[#FCFCFD]">
+                <h1 class="bg-[#FFF9F0] ring-1 ring-[#FEACC] ring-inset flex items-center justify-center rounded-md h-12 text-[22px] text-[#262626] font-medium">Pro Plan</h1>
+                <div class="flex items-center justify-center">
+                    <h2 class="font-semibold text-[80px] text-[#262626]">$79</h2>
+                    <span class="text-[20px] text-[#4C4C4D] font-medium pt-7">/month</span>
+                </div>
+                <div class="flex flex-col gap-[30px] bg-[#FFFFFF] rounded-[14px] pt-[40px] px-[20px] md:px-[40px] pb-0 border border-solid border-[#F1F1F3]">
+                    <h3 class="font-medium text-[20px] text-[#262626] flex items-center justify-center">Available Features</h3>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/mark.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Unlimited access to all courses.</span>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/mark.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Unlimited course materials and resources.</span>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/mark.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Priority support from instructors.</span>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/mark.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Course completion certificates.</span>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/mark.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Ad-free experience.</span>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/mark.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Access to exclusive Pro Plan community forums.</span>
+                    </div>
+                    <div class="flex items-center gap-4 rounded-lg border border-solid border-[#F1F1F3] py-[10px] px-[16px]">
+                        <span><img src="./img/mark.png" alt="Ellipse"></span>
+                        <span class="font-regular text-lg text-[#4C4C4D]">Early access to new courses and updates.</span>
+                    </div>
+                    <div class="-mx-[20px] md:-mx-[40px]">
+                        <button class="bg-[var(--primary)] text-[var(--secondary)] w-full h-12 rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] border-2 border-[var(--secondary)] hover:border-[var(--primary)] transition">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- SECTION HOUSING FREQUENTLY ASKED QUESTIONS(FAQS) -->
+
+    <section class="mt-8 bg-[#FFFFFF] rounded-xl p-6 mx-4 md:mx-34">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="gap-2">
+                
+                <h1 class="font-semibold text-3xl md:text-5xl max-w-[408px] text-[var(--text-color)]">Frequently Asked Questions</h1>
+                <p class="font-regular text-lg text-[#333333] max-w-[600px] mt-4 mb-6">
+                    Still you have any questions? Contact our Team via support@skillbridge.com
+                </p>
+                <button class="bg-[var(--secondary)] text-[var(--text-color)] w-40 h-12 rounded-lg hover:bg-[var(--primary)] hover:text-[var(--secondary)] transition">See All FAQs</button>
+            </div>
+
+            <div class="flex flex-col gap-6">
+                <div class="rounded-xl p-6 md:p-[50px] bg-[#FFFFFF] border border-solid border-[#F1F1F3] overflow-hidden">
+                    <div class="flex items-center justify-between border-b border-solid border-[#F1F1F3]">
+                        <h4 class="font-medium text-lg md:text-xl text-[var(--text-color)] mb-3">Can I enroll in multiple courses at once?</h4>
+                        <img src="./img/x with color.png" alt="Arrow" class="w-10 h-10 md:w-12 md:h-12 rounded-lg mb-3">
+                    </div>
+                    <p class="font-regular text-lg text-[#4C4C4D] mt-6 mb-6">Yes, you can enroll in multiple courses simultaneously.</p>
+                    <div class="flex items-center justify-between border border-solid border-[#F1F1F3] overflow-hidden rounded-lg bg-[#F7F7F8] py-[10px] px-[16px] mt-12">
+                        <span class="font-medium text-base md:text-lg text-[#333333]">Enrollment Process for Different Courses</span>
+                        <img class="rounded-lg w-10 h-10 md:w-12 md:h-12" src="./img/arrow right.png" alt="Arrow">
+                    </div>
+                </div>
+                <div class="rounded-xl p-6 md:p-[50px] bg-[#FFFFFF] border border-solid border-[#F1F1F3] overflow-hidden flex items-center justify-between">
+                    <h4 class="font-medium text-lg md:text-xl text-[var(--text-color)]">What is the refund policy for courses?</h4>
+                    <img src="./img/plus.png" alt="Arrow" class="w-10 h-10 md:w-12 md:h-12 rounded-lg">
+                </div>
+                <div class="rounded-xl p-6 md:p-[50px] bg-[#FFFFFF] border border-solid border-[#F1F1F3] overflow-hidden flex items-center justify-between">
+                    <h4 class="font-medium text-lg md:text-xl text-[var(--text-color)]">What kind of support can I expect from instructors?</h4>
+                    <img src="./img/plus.png" alt="Arrow" class="w-10 h-10 md:w-12 md:h-12 rounded-lg">
+                </div>
+                <div class="rounded-xl p-6 md:p-[50px] bg-[#FFFFFF] border border-solid border-[#F1F1F3] overflow-hidden flex items-center justify-between">
+                    <h4 class="font-medium text-lg md:text-xl text-[var(--text-color)]">Can I download the course materials for offline access?</h4>
+                    <img src="./img/plus.png" alt="Arrow" class="w-10 h-10 md:w-12 md:h-12 rounded-lg">
+                </div>
+                <div class="rounded-xl p-6 md:p-[50px] bg-[#FFFFFF] border border-solid border-[#F1F1F3] overflow-hidden flex items-center justify-between">
+                    <h4 class="font-medium text-lg md:text-xl text-[var(--text-color)]">How do I access the course materials?</h4>
+                    <img src="./img/plus.png" alt="Arrow" class="w-10 h-10 md:w-12 md:h-12 rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="bg-[#FFFFFF] mt-20 px-6 md:px-20 py-12">
+        
+        <div class="flex flex-col md:flex-row items-start justify-between gap-8">
+
+            <div class="flex flex-col gap-4">
+                <img class="w-12 h-12" src="./img/s-shape.png" alt="Logo">
+                <div class="flex flex-col gap-2 mt-4">
+                    <p class="flex items-center gap-2 text-lg text-[#262626] font-medium">✉ Hello@skillbridge.com</p>
+                    <p class="flex items-center gap-2 text-lg text-[#262626] font-medium">📞 +91 91813 23 2309</p>
+                    <p class="flex items-center gap-2 text-lg text-[#262626] font-medium">📍 Somewhere in the World</p>
+                </div>
+            </div>
+
+            <div>
+                <p class="font-semibold text-xl mb-4 text-[#262626]">Home</p>
+                <ul class="space-y-2 text-lg text-[#59595A]">
+                    <li><a href="#" class="hover:text-[#ff9500] transition">Benefits</a></li>
+                    <li><a href="#" class="hover:text-[#ff9500] transition">Our Courses</a></li>
+                    <li><a href="#" class="hover:text-[#ff9500] transition">Our Testimonials</a></li>
+                    <li><a href="#" class="hover:text-[#ff9500] transition">Our FAQ</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="font-semibold text-xl mb-4 text-[#262626]">About Us</p>
+                <ul class="space-y-2 text-lg text-[#59595A]">
+                    <li><a href="#" class="hover:text-[#ff9500] transition">Company</a></li>
+                    <li><a href="#" class="hover:text-[#ff9500] transition">Achievements</a></li>
+                    <li><a href="#" class="hover:text-[#ff9500] transition">Our Goals</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="font-semibold text-xl mb-4 text-[#262626]">Social Profiles</p>
+                <div class="flex items-center gap-3">
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-[#F1F1F3] bg-gray-100">
+                        <img src="./img/facebook.png" alt="Facebook" class="w-4 h-4">
+                    </a>
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-[#F1F1F3] bg-gray-100">
+                        <img src="./img/twiiter.png" alt="Twitter" class="w-4 h-4">
+                    </a>
+                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full border border-[#F1F1F3] bg-gray-100">
+                        <img src="./img/linkedin.png" alt="LinkedIn" class="w-4 h-4">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="border-t mt-12 flex items-center justify-center pt-6 text-sm text-[#656567]">
+            © 2023 Skillbridge. All rights reserved.
+        </p>
+    </footer>
+
 </body>
 
 </html>
+
+
+
+
+   <!-- THIS WAS CODED BY ME, DAWOOD ABDULQAHAR, AS A PART OF THE FRONTEND MENTOR CHALLENGE. THE CHALLENGE WAS TO BUILD A LANDING PAGE FOR AN ONLINE LEARNING PLATFORM CALLED SKILLBRIDGE. I USED HTML AND TAILWIND CSS TO CREATE A RESPONSIVE AND VISUALLY APPEALING DESIGN THAT SHOWCASES THE COURSES, TESTIMONIALS, PRICING, AND FAQ SECTIONS OF THE WEBSITE. THE CODE IS WELL-STRUCTURED AND FOLLOWS BEST PRACTICES FOR WEB DEVELOPMENT. -->
