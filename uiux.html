@@ -1,175 +1,367 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UI/UX Design Course</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UI/UX Design Course</title>
 
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Heebo:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
 </head>
 
-<body class="bg-gray-100" style="--primary: #ff9500; --secondary: #FCFCFD; 
-    --text-color: #262626 ; ">
+<body class="bg-gray-100" style="--primary: #ff9500; --secondary: #fcfcfd; --text-color: #262626">
+  <!-- HEADER STYLING STARTS HERE -->
 
+  <header>
+    <div
+      class="bg-[var(--primary)] flex items-center justify-center rounded-lg py-[14px] mx-[14px] mt-[19px] gap-[23px]">
+      <p class="text-[var(--secondary)] text-sm md:text-lg text-center px-2">
+        Free Courses 🌟 Sale Ends Soon, Get It Now →
+      </p>
+    </div>
 
+    <div
+      class="flex flex-col md:flex-row items-center justify-between mx-[14px] mt-[19px] pt-[20px] pb-[15px] px-8 border-b border- solid border-[#F1F1F3] gap-4">
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <h1>
+          <img src="img/s-shape.png" />
+        </h1>
+        <nav>
+          <ul class="hidden md:flex gap-6 items-center">
+            <li
+              class="bg-gray-200 text-black py-[14px] px-[24px] rounded-lg hover:bg-[var(--primary)] hover:text-white">
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="course.html" class="text-[var(--text-color)] hover:text-[var(--primary)] transition">Courses</a>
+            </li>
+            <li>
+              <a href="#" class="text-[var(--text-color)] hover:text-[var(--primary)] transition">About us</a>
+            </li>
+            <li>
+              <a href="#" class="text-[var(--text-color)] hover:text-[var(--primary)] transition">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="text-[var(--text-color)] hover:text-[var(--primary)] transition">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-    <!-- HEADER STYLING STARTS HERE -->
+      <div class="flex items-center gap-4">
+        <span class="font-medium hover:text-[var(--primary)] transition">Sign Up</span>
+        <button
+          class="bg-[var(--primary)] text-white py-[14px] px-[34px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] transition">
+          Login
+        </button>
+      </div>
+    </div>
+  </header>
 
-    <header>
-        <div
-            class="bg-[var(--primary)] flex items-center justify-center rounded-lg py-[14px] mx-[14px] mt-[19px] gap-[23px]">
+  <!-- HEADER STYLING ENDS HERE -->
 
-            <p class="text-[var(--secondary)] text-sm md:text-lg text-center px-2">
-                Free Courses 🌟 Sale Ends Soon, Get It Now →
-            </p>
-        </div>
+  <section
+    class="w-full flex flex-col md:flex-row gap-6 md:gap-[100px] px-[20px] md:px-[50px] py-6 justify-between items-start mt-[40px] border-b border- solid border-[#F1F1F3] gap-4 border-b border- solid border-[#F1F1F3]">
+    <div>
+      <h2 class="font-semibold text-2xl md:text-3xl text-[#262626]">
+        UI/UX Design Course
+      </h2>
+    </div>
 
-        <div
-            class="flex flex-col md:flex-row items-center justify-between mx-[14px] mt-[19px] pt-[20px] pb-[15px] px-8 border-b border- solid border-[#F1F1F3] gap-4">
+    <div class="md:w-1/2">
+      <p class="text-lg text-[#595959] font-regular">
+        Welcome to our UI/UX Design course! This comprehensive program will
+        equip you with the knowledge and skills to create exceptional user
+        interfaces (UI) and enhance user experiences (UX). Dive into the world
+        of design thinking, wireframing, prototyping, and usability testing.
+        Below is an overview of the curriculum
+      </p>
+    </div>
+  </section>
 
-            <div class="flex flex-col md:flex-row items-center gap-6">
-                <h1>
-                    <img src="img/s-shape.png" />
-                </h1>
-                <nav>
+  <!-- SECTION HOUSING THE BIG IMG -->
+  <section class="flex justify-center mt-18 px-4">
+    <div class="relative w-full max-w-5xl">
+      <img class="rounded-xl overflow-hidden w-full" src="./img/poi.png" alt="Big Image" />
+      <div class="absolute inset-0 flex justify-center items-center">
+        <img class="w-12 h-12" src="./img/Button@2x.png" alt="Button" />
+      </div>
+    </div>
+  </section>
 
-                    <ul class="hidden md:flex gap-6 items-center">
-                        <li
-                            class="bg-gray-200 text-black py-[14px] px-[24px] rounded-lg hover:bg-[var(--primary)] hover:text-white">
-                            <a href="#">Home</a>
-                        </li>
-                        <li>
-                            <a href="course.html"
-                                class=" text-[var(--text-color)] hover:text-[var(--primary)] transition">Courses</a>
-                        </li>
-                        <li>
-                            <a href="#" class="text-[var(--text-color)] hover:text-[var(--primary)] transition">About
-                                us</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-[var(--text-color)] hover:text-[var(--primary)] transition">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="text-[var(--text-color)] hover:text-[var(--primary)] transition">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+  <!-- THE GRIDS -->
 
-            <div class="flex items-center gap-4">
-                <span class="font-medium hover:text-[var(--primary)] transition">Sign Up</span>
-                <button
-                    class="bg-[var(--primary)] text-white py-[14px] px-[34px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] transition">
-                    Login
-                </button>
-            </div>
-        </div>
-    </header>
+  <section class="grid grid-cols-2 mt-8 gap-6 px-4">
+    <!-- 1st GRID -->
 
-
-    <!-- HEADER STYLING ENDS HERE -->
-
-
-
-    <section
-        class="w-full flex flex-col md:flex-row  gap-6 md:gap-[100px] px-[20px] md:px-[50px] py-6 justify-between items-start mt-[40px] border-b border- solid border-[#F1F1F3] gap-4  border-b border- solid border-[#F1F1F3] ">
-
+    <div class="bg-[#FFFFFF] flex flex-col rounded-xl p-[50px] min-h-[400px]">
+      <span class="[#262626] text-[80px] font-bold text-right">01</span>
+      <h1 class="text-[#333333] font-semibold text-2xl mb-6">
+        Introduction to UI/UX Design
+      </h1>
+      <!-- DIV HOUSING 1ST 45MINS -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4">
         <div>
-            <h2 class="font-semibold text-2xl md:text-3xl text-[#262626] ">
-                UI/UX Design Course
-            </h2>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Understanding UI/UX Design Principles
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 01</h3>
         </div>
 
-        <div class="md:w-1/2">
-            <p class="text-lg text-[#595959] font-regular">
-                Welcome to our UI/UX Design course! This comprehensive program will equip you with the knowledge and
-                skills to create exceptional user interfaces (UI) and enhance user experiences (UX). Dive into the world
-                of design thinking, wireframing, prototyping, and usability testing. Below is an overview of the
-                curriculum
-            </p>
-        </div>
-    </section>
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒 45 Minutes
+        </h4>
+      </div>
 
-
-
-
-    <!-- SECTION HOUSING THE BIG IMG -->
-    <section class="flex justify-center mt-18 px-4">
-        <div class="relative w-full max-w-5xl">
-
-            <img class="rounded-xl overflow-hidden w-full" src="./img/poi.png" alt="Big Image" />
-            <div class="absolute inset-0 flex justify-center items-center">
-                <img class="w-12 h-12" src="./img/Button@2x.png" alt="Button" />
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <!-- THE GRIDS -->
-
-    <section class="grid grid-cols-2  mt-8 gap-6 px-4 ">
-
-        <div class="bg-[#FFFFFF] flex flex-col  rounded-xl p-[50px] min-h-[400px]">
-            <span class="[#262626] text-[80px] font-bold text-right ">01</span>
-            <h1 class="text-[#333333] font-semibold text-2xl mb-6">Introduction to UI/UX Design</h1>
-            <!-- DIV HOUSING 1ST 45MINS -->
-            <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4">
-                <div>
-                    <h2 class="font-medium  text-2xl text-[#333333]">Understanding UI/UX Design Principles</h2>
-                    <h3 class="font-regular text-lg text-[#59595A]">Lesson 01</h3>
-
-                </div>
-
-                <h4 class=" bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">🕒 45 Minutes</h4>
-
-
-            </div>
-
-            <!-- DIV HOUSING 1hr -->
-            <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4">
-                <div>
-                    <h2>Importance of User-Centered Design</h2>
-                    <h3>Lesson 02</h3>
-
-                </div>
-
-                <h4>🕒1 Hour</h4>
-
-
-            </div>
-
-            <!-- DIV HOUSING 1hr -->
-            <div>
-                <div>
-                    <h2>The Role of UI/UX Design in Product Development</h2>
-                    <h3>Lesson 03</h3>
-
-                </div>
-
-                <h4>🕒 45Minutes</h4>
-
-
-            </div>
-
-
-
-
+      <!-- DIV HOUSING 1hr -->
+      <div
+        class="rounded-lg border border-solid border-[#FFD599] shadow-[0_0_4px_#FFF4E5] p-6 flex justify-between gap-4 mt-3">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Importance of User-Centered Design
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 02</h3>
         </div>
 
-    </section>
+        <h4
+          class="flex items-center justify-center bg-[#FFEACC] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒1 Hour
+        </h4>
+      </div>
+
+      <!-- DIV HOUSING 45 mins -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4 mt-3">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            The Role of UI/UX Design in Product Development
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 03</h3>
+        </div>
+
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒 45 Minutes
+        </h4>
+      </div>
+
+      
+    </div>
 
 
+     <!-- 2ND GRID -->
+    <div class="bg-[#FFFFFF] flex flex-col rounded-xl p-[50px] min-h-[400px]">
+      <span class="[#262626] text-[80px] font-bold text-right">02</span>
+      <h1 class="text-[#333333] font-semibold text-2xl mb-6">
+        User Research and Analysis
+      </h1>
+      <!-- DIV HOUSING 1ST 1 hour -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Conducting User Research and Interviews
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 01</h3>
+        </div>
 
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒 1 Hour
+        </h4>
+      </div>
+
+      <!-- DIV HOUSING 1hr -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4 mt-3">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Analyzing User Needs and Behavior
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 02</h3>
+        </div>
+
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒1 Hour
+        </h4>
+      </div>
+
+      <!-- DIV HOUSING 45 mins -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4 mt-3">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Creating User Personas and Scenarios
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 03</h3>
+        </div>
+
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒 45 Minutes
+        </h4>
+      </div>
+    </div>
+
+     <!-- 3RD GRID -->
+    <div class="bg-[#FFFFFF] flex flex-col rounded-xl p-[50px] min-h-[400px]">
+      <span class="[#262626] text-[80px] font-bold text-right">03</span>
+      <h1 class="text-[#333333] font-semibold text-2xl mb-6">
+        Wireframing and Prototyping
+      </h1>
+      <!-- DIV HOUSING 1ST 1 hour -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Introduction to Wireframing Tools and Techniques
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 01</h3>
+        </div>
+
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒 1 Hour
+        </h4>
+      </div>
+
+      <!-- DIV HOUSING 1hr -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4 mt-3">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Creating Low-Fidelity Wireframes
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 02</h3>
+        </div>
+
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒1 Hour
+        </h4>
+      </div>
+
+      <!-- DIV HOUSING 1hr -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4 mt-3">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Prototyping and Interactive Mockups
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 03</h3>
+        </div>
+
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒 1 Hour
+        </h4>
+      </div>
+    </div>
+
+    <!-- 4TH GRID -->
+    <div class="bg-[#FFFFFF] flex flex-col rounded-xl p-[50px] min-h-[400px]">
+      <span class="[#262626] text-[80px] font-bold text-right">04</span>
+      <h1 class="text-[#333333] font-semibold text-2xl mb-6">
+        Visual Design and Branding
+      </h1>
+      <!-- DIV HOUSING 1ST 1 Hour -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Color Theory and Typography in UI Design
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 01</h3>
+        </div>
+
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒 1 Hour
+        </h4>
+      </div>
+
+      <!-- DIV HOUSING 1hr -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4 mt-3">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Visual Hierarchy and Layout Design
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 02</h3>
+        </div>
+
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒1 Hour
+        </h4>
+      </div>
+
+      <!-- DIV HOUSING 45 mins -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4 mt-3">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Creating a Strong Brand Identity
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 03</h3>
+        </div>
+
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒 45 Minutes
+        </h4>
+      </div>
+    </div>
+
+      <!-- 5TH GRID -->
+    <div class="bg-[#FFFFFF] flex flex-col rounded-xl p-[50px] min-h-[400px]">
+      <span class="[#262626] text-[80px] font-bold text-right">05</span>
+      <h1 class="text-[#333333] font-semibold text-2xl mb-6">
+        Usability Testing and Iteration
+      </h1>
+      <!-- DIV HOUSING 1 hour -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Usability Testing Methods and Techniques
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 01</h3>
+        </div>
+
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒 1 hour
+        </h4>
+      </div>
+
+      <!-- DIV HOUSING  45 mins -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4 mt-3">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Analyzing Usability Test Results
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 02</h3>
+        </div>
+
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒45 Minutes
+        </h4>
+      </div>
+
+      <!-- DIV HOUSING 45 mins -->
+      <div class="rounded-lg border border-solid border-[#F1F1F3] p-6 flex justify-between gap-4 mt-3">
+        <div>
+          <h2 class="font-medium text-2xl text-[#333333]">
+            Iterating and Improving UX Designs
+          </h2>
+          <h3 class="font-regular text-lg text-[#59595A]">Lesson 03</h3>
+        </div>
+
+        <h4
+          class="flex items-center justify-center bg-[#F7F7F8] gap-[4px] rounded-lg whitespace-nowrap self-start h-[48px] w-2/3 px-[14px] py-[12px]">
+          🕒 45 Minutes
+        </h4>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
