@@ -9,7 +9,61 @@
     <title>Course Section</title>
 </head>
 
-<body class="bg-[#E4E4E7]">
+<body class="bg-[#E4E4E7]  bg-gray-100" style="--primary: #ff9500; --secondary: #FCFCFD; 
+    --text-color: #262626 ; "> 
+
+     <header>
+        <div
+            class="bg-[var(--primary)] flex items-center justify-center rounded-lg py-[14px] mx-[14px] mt-[19px] gap-[23px]">
+            
+            <p class="text-[var(--secondary)] text-sm md:text-lg text-center px-2">
+                Free Courses 🌟 Sale Ends Soon, Get It Now →
+            </p>
+        </div>
+        
+        <div
+            class="flex flex-col md:flex-row items-center justify-between mx-[14px] mt-[19px] pt-[20px] pb-[15px] px-8 border-b border- solid border-[#F1F1F3] gap-4">
+            
+            <div class="flex flex-col md:flex-row items-center gap-6">
+                <h1>
+                    <img src="img/s-shape.png" />
+                </h1>
+                <nav>
+                    
+                    <ul class="hidden md:flex gap-6 items-center">
+                        <li
+                            class="bg-gray-200 text-black py-[14px] px-[24px] rounded-lg hover:bg-[var(--primary)] hover:text-white">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="course.html"
+                                class=" text-[var(--text-color)] hover:text-[var(--primary)] transition">Courses</a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="text-[var(--text-color)] hover:text-[var(--primary)] transition">About
+                                us</a>
+                        </li>
+                        <li>
+                            <a href="pricing.html "
+                                class="text-[var(--text-color)] hover:text-[var(--primary)] transition">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="text-[var(--text-color)] hover:text-[var(--primary)] transition">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <span class="font-medium hover:text-[var(--primary)] transition">Sign Up</span>
+                <button
+                    class="bg-[var(--primary)] text-white py-[14px] px-[34px] rounded-lg hover:bg-[var(--secondary)] hover:text-[var(--primary)] transition">
+                    Login
+                </button>
+            </div>
+        </div>
+    </header>
 
 
 
@@ -19,7 +73,7 @@
         <h2 class="font-semibold text-2xl md:text-3xl">
             Online Courses on Design and Development
         </h2>
-    </div>
+    </div>                  
 
     <div class="md:w-1/2">
         <p class="text-sm md:text-[18px] font-normal text-[#333]">
@@ -112,7 +166,10 @@
                     Learn design principles, wireframing, prototyping, and usability testing techniques.</p>
             </div>
             <div>
-                <button class="font-semibold bg-[#E4E4E7] w-40 h-12 hover:bg-[#ff9500] rounded shadow flex items-center justify-center">View Course</button>
+                <a href="uiux.html">
+
+                    <button class="font-semibold bg-[#E4E4E7] w-40 h-12 hover:bg-[#ff9500] rounded shadow flex items-center justify-center" >View Course</button>
+                </a>
             </div>
         </div>
 
@@ -321,7 +378,7 @@
             </div>
         </div>
 
-        <div class = "grid grid-cols-3 gap-2 md:gap-6 px-[20px] md:px-[50px]">
+        <div class = "grid grid-cols-3 gap-2 md:gap-6 px-[20px] md:px-[50px]">n 
             <img class="rounded-xl" src="img/fr1.png" alt="image 1" class="h-24 md:h-60 w-full object-cover rounded-xl">
             <img class="rounded-xl" src="img/fr2.png" alt="image 1" class="h-24 md:h-60 w-full object-cover rounded-xl">
             <img class="rounded-xl" src="img/fr3.png" alt="image 1" class="h-24 md:h-60 w-full object-cover rounded-xl">
